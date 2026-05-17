@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LF8 Roadmap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="quiz-page">
+  <header class="roadmap-hero">
+    <nav class="nav shell-nav container">
+      <a href="index.html" class="text-link">← Prüfungen</a>
+      <button id="resetBtn" class="ghost-btn">Zurücksetzen</button>
+    </nav>
+
+    <section class="container roadmap-copy">
+      <p class="eyebrow">Lernfeld 8</p>
+      <h1>Projektmanagement Roadmap</h1>
+      <p>Arbeite die Etappen nacheinander ab. Ein Fehler setzt die gesamte Strecke zurück — damit du nicht nur durchkommst, sondern wirklich vorbereitet bist.</p>
+    </section>
+  </header>
+
+  <main class="container roadmap-page">
+    <section class="panel journey-panel">
+      <div class="journey-head">
+        <div>
+          <p class="eyebrow muted-eye">Dein Weg</p>
+          <h2>Roadmap</h2>
+        </div>
+        <div class="journey-progress">
+          <strong id="progressText">0 von 56 richtig</strong>
+          <span id="stageText">0 von 9 Themen abgeschlossen</span>
+        </div>
+      </div>
+      <div class="progress-bar"><div id="progressFill"></div></div>
+      <div id="topicList" class="topic-list roadmap-track"></div>
+    </section>
+
+    <section class="quiz-grid">
+      <article class="panel focus-panel">
+        <span class="label">Aktuelle Etappe</span>
+        <h2 id="topicTitle">Projektstart</h2>
+        <p id="streakText">Serie: 0</p>
+      </article>
+
+      <article class="panel quiz-card">
+        <div id="questionBox"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="assets/js/questions.js"></script>
+  <script src="assets/js/quiz.js"></script>
+</body>
+</html>
